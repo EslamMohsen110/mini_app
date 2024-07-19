@@ -5,6 +5,7 @@ class ThemeMod {
   static final ThemeData themeData = ThemeData(
     scaffoldBackgroundColor: Colors.transparent,
     appBarTheme: AppBarTheme(
+      foregroundColor: ColorApp.cWhiteColor,
       centerTitle: true,
       backgroundColor: Colors.transparent,
     ),

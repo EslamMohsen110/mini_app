@@ -1,9 +1,11 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:mini_app/resourses/color/color_app.dart';
+import 'package:mini_app/screens/catogry_screen.dart';
 
 class HomeScreen extends StatelessWidget {
+  static const String routeName = 'Home';
+
   const HomeScreen({super.key});
 
   @override
@@ -50,7 +52,13 @@ class HomeScreen extends StatelessWidget {
                           ),
                           Spacer(),
                           ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => CatogryScreen(),
+                                  ));
+                            },
                             child: Text(
                               'Get started now',
                               style: TextStyle(color: Colors.white),
